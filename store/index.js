@@ -1,6 +1,6 @@
 export const state = () => ({
     blogPosts: [],
-    aboutPage: {}
+    aboutPage: null
 });
 
 export const mutations = {
@@ -19,8 +19,6 @@ export const actions = {
             false,
             /\.json$/
         );
-        console.log(files.keys());
-        console.log("hi");
         const blogPosts = files.keys().map((key) => {
             const res = files(key);
             res.slug = key.slice(2, -5);
@@ -32,11 +30,11 @@ export const actions = {
             false,
             /\.json$/
         );
-        console.log(siteFiles.keys());
+        // eslint-disable-next-line no-unused-vars
         const aboutPageIndex = siteFiles.keys().findIndex((key) => {
             return key.slice(2, -5) === "about-us";
         });
-        const aboutRes = files(siteFiles.keys()[aboutPageIndex]);
+        const aboutRes = siteFiles(siteFiles.keys()[aboutPageIndex]);
         await commit("setAboutPage", aboutRes);
     }
 };

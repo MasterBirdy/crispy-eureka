@@ -17,7 +17,7 @@ export default {
         imgSource: String,
         slug: String
     }
-}
+};
 </script>
 
 <style scoped>

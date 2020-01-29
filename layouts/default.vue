@@ -9,7 +9,7 @@
                     </nuxt-link>
                 </li>
                 <li>
-                    About Us
+                    <nuxt-link to="/about-us">About Us</nuxt-link>
                 </li>
                 <li>Blog</li>
                 <li>Contact</li>
@@ -97,6 +97,7 @@ a.nuxt-link-active {
 li:first-child a:hover,
 li:first-child a:active,
 li:first-child a.nuxt-link-active {
+    font-weight: 700;
     color: #111;
 }
 
