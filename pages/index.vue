@@ -29,14 +29,14 @@ export default {
                         "https://identity.netlify.com/v1/netlify-identity-widget.js"
                 }
             ]
-        }
+        };
     },
     computed: {
         blogPosts() {
-            return this.$store.state.blogPosts
+            return this.$store.state.blogPosts;
         }
     }
-}
+};
 </script>
 
 <style scoped>
@@ -77,6 +77,19 @@ p {
 
 img {
     width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-column-gap: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {

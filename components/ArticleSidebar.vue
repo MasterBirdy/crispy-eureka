@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <aside>
         <h1>Articles</h1>
         <article-preview
             v-for="post in blogPosts"
@@ -9,11 +9,11 @@
             :previewText="post.description"
             :imgSource="post.thumbnail"
         ></article-preview>
-    </section>
+    </aside>
 </template>
 
 <script>
-import ArticlePreview from "@/components/ArticlePreview"
+import ArticlePreview from "@/components/ArticlePreview";
 
 export default {
     components: {
@@ -21,10 +21,10 @@ export default {
     },
     computed: {
         blogPosts() {
-            return this.$store.state.blogPosts
+            return this.$store.state.blogPosts;
         }
     }
-}
+};
 </script>
 
 <style scoped>
@@ -33,7 +33,7 @@ h1 {
     font-family: "EB Garamond", serif;
     margin-bottom: 0.5rem;
 }
-section {
+aside {
     width: 350px;
     background-color: #eee;
     border-radius: 5px;

@@ -10,8 +10,8 @@ collections:
       name: "pages"
       files:
           - label: "About Page"
-            name: "about"
-            file: "assets/content/about.json"
+            name: "about-us"
+            file: "assets/content/about-us.json"
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Intro, name: intro, widget: markdown }
