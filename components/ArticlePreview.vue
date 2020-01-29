@@ -4,9 +4,8 @@
             :style="{ backgroundImage: `url(${imgSource})` }"
             class="background-picture"
         ></div>
-        <p>{{ name }}</p>
+        <h2>{{ name }}</h2>
         <p>{{ previewText }}</p>
-        <p>{{ imgSource }}</p>
     </nuxt-link>
 </template>
 
@@ -30,5 +29,16 @@ export default {
 
 .main {
     cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.45rem;
+    font-family: "EB Garamond", serif;
+}
+
+p {
+    font-size: 0.95rem;
+    font-family: "Quicksand", sans-serif;
 }
 </style>

@@ -91,7 +91,6 @@ export default {
         }
     },
     markdownit: {
-        injected: true,
-        breaks: true
+        injected: true
     }
 }

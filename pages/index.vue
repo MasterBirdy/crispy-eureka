@@ -6,7 +6,10 @@
             :to="'/' + post.slug"
             tag="section"
         >
-            <img :src="post.thumbnail" />
+            <div
+                :style="{ backgroundImage: `url(${post.thumbnail})` }"
+                class="preview-image"
+            ></div>
 
             <h2>
                 {{ post.title }}
@@ -52,8 +55,15 @@ export default {
     cursor: pointer;
 }
 
+.preview-image {
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
+    font-family: "EB Garamond", serif;
     font-weight: 700;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;

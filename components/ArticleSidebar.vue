@@ -29,8 +29,9 @@ export default {
 
 <style scoped>
 h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-family: "EB Garamond", serif;
+    margin-bottom: 0.5rem;
 }
 section {
     width: 350px;

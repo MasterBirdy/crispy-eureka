@@ -1,6 +1,6 @@
 <template>
     <article>
-        <div>
+        <div class="article-container">
             <h1>{{ blogPost.title }}</h1>
             <div class="flex">
                 <img :src="blogPost.profilepic" />
@@ -48,6 +48,11 @@ article {
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
+}
+
+.article-container {
+    max-width: 800px;
+    margin-right: 4rem;
 }
 
 .flex {
@@ -121,13 +126,14 @@ img {
 }
 
 .markdown >>> p {
-    margin: 0.5rem 0;
+    margin: 0.67rem 0;
     color: #444;
 }
 
-.markdown >>> ol {
+.markdown >>> ol,
+.markdown >>> ul {
     color: #444;
-    margin: 0.5rem 0 0.5rem 3rem;
+    margin: 2rem 0 2rem 3rem;
 }
 
 .markdown >>> li {

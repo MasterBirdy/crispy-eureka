@@ -60,7 +60,7 @@ header ul {
     align-items: baseline;
 }
 
-ul li:first-child {
+header ul li:first-child {
     font-size: 2rem;
     font-weight: 700;
     color: rgb(19, 19, 19);
