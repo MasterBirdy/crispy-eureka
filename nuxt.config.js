@@ -23,13 +23,18 @@ export default {
                 ref: 'stylesheet',
                 href:
                     'https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap'
+            },
+            {
+                ref: 'stylesheet',
+                href:
+                    'https://fonts.googleapis.com/css?family=Merriweather:300i,400&display=swap'
             }
         ]
     },
     /*
      ** Customize the progress-bar color
      */
-    loading: { color: '#fff' },
+    loading: { color: 'green' },
     /*
      ** Global CSS
      */
@@ -37,7 +42,7 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: ["~plugins/date-filter.js"],
     /*
      ** Nuxt.js dev-modules
      */
@@ -50,7 +55,8 @@ export default {
      */
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
-        '@nuxtjs/axios'
+        '@nuxtjs/axios',
+        '@nuxtjs/markdownit'
     ],
     /*
      ** Axios module configuration
@@ -65,6 +71,22 @@ export default {
          ** You can extend webpack config here
          */
         // eslint-disable-next-line prettier/prettier
-        extend(config, ctx) { }
+        extend(config, ctx) { },
+
+    },
+    generate: {
+        routes() {
+            const fs = require('fs')
+            return fs.readdirSync('./assets/content/blog').map((file) => {
+                return {
+                    route: `/blog/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
+                    payload: require(`./assets/content/blog/${file}`)
+                }
+            })
+        }
+    },
+    markdownit: {
+        injected: true,
+        breaks: true
     }
 }

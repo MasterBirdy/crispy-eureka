@@ -2,7 +2,7 @@
     <div>
         <header class="container">
             <ul>
-                <li>HelpBlog</li>
+                <li><nuxt-link to="/">HelpBlog</nuxt-link></li>
                 <li>About Us</li>
                 <li>Blog</li>
                 <li>Contact</li>
@@ -11,7 +11,9 @@
         <nav>
             <div class="container">hello world</div>
         </nav>
-        <nuxt />
+        <div class="container">
+            <nuxt />
+        </div>
     </div>
 </template>
 
@@ -55,7 +57,7 @@ header ul li {
     color: rgb(61, 61, 61);
     font-weight: 500;
     font-size: 1rem;
-    margin-right: 3.25rem;
+    margin-right: 0.5rem;
 }
 
 nav {
@@ -64,10 +66,31 @@ nav {
     color: rgba(255, 255, 255, 0);
 }
 
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover,
+a:active,
+a.nuxt-link-active {
+    color: blue;
+}
+
+li:first-child a:hover,
+li:first-child a:active,
+li:first-child a.nuxt-link-active {
+    color: #111;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 1400px;
-        padding: 0 1rem;
+        padding: 0 4rem;
+    }
+
+    header ul li {
+        margin-right: 3.25rem;
     }
 }
 </style>
