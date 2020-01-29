@@ -39,4 +39,10 @@ section {
     border-radius: 5px;
     padding: 0.5rem 1rem;
 }
+
+@media screen and (max-width: 1350px) {
+    section {
+        display: none;
+    }
+}
 </style>

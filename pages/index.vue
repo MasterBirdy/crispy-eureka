@@ -45,6 +45,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 4rem;
+    grid-row-gap: 1rem;
 }
 
 .grid section {
@@ -76,5 +77,17 @@ p {
 
 img {
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 0.33rem;
+        margin-bottom: 0.33rem;
+    }
 }
 </style>

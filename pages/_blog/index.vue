@@ -147,4 +147,49 @@ img {
 .markdown >>> code {
     word-break: break-all;
 }
+
+@media screen and (max-width: 768px) {
+    article {
+        padding-right: 0;
+        margin-top: 0.75rem;
+    }
+
+    .article-container {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .markdown >>> pre {
+        white-space: pre-line;
+    }
+
+    article h1 {
+        font-size: 2.3rem;
+    }
+
+    .markdown >>> h1 {
+        font-size: 2.1rem;
+    }
+
+    .markdown >>> h2 {
+        font-size: 1.75rem;
+    }
+
+    .markdown >>> h3 {
+        font-size: 1.5rem;
+    }
+
+    .markdown >>> h4 {
+        font-size: 1.3rem;
+    }
+
+    .markdown >>> h5 {
+        font-size: 1.25rem;
+    }
+
+    .markdown >>> h6 {
+        font-size: 1.2rem;
+    }
+}
 </style>

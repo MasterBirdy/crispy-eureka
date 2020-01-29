@@ -32,6 +32,10 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+body {
+    padding-bottom: 1rem;
+}
+
 *,
 *:before,
 *:after {
@@ -58,10 +62,11 @@ header ul {
     display: flex;
     list-style: none;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 header ul li:first-child {
-    font-size: 2rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: rgb(19, 19, 19);
 }
@@ -69,8 +74,7 @@ header ul li:first-child {
 header ul li {
     color: rgb(61, 61, 61);
     font-weight: 500;
-    font-size: 1.1rem;
-    margin-right: 0.5rem;
+    font-size: 0.95rem;
 }
 
 nav {
@@ -102,8 +106,17 @@ li:first-child a.nuxt-link-active {
         padding: 0 4rem;
     }
 
+    header ul {
+        justify-content: flex-start;
+    }
+
     header ul li {
         margin-right: 3.25rem;
+        font-size: 1.1rem;
+    }
+
+    header ul li:first-child {
+        font-size: 2rem;
     }
 }
 </style>
