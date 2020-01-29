@@ -1,1 +1,4 @@
-{}
+{
+  "title": "About Us",
+  "intro": "Hello!\n\nThank you for taking the time to visit my blog that is powered by **Netlify CMS**! The content of the blog posts and the static pages are transformed into markdown by Netlify. The markdown is then generated into HTML through a Vue library in Nuxt. Nuxt and Vue are able to generate the pages statically so that you'll be able to get a *blazing fast user experience*!\n\nTo show my gratitude, I have linked some cat gifs below! Enjoy! 🐈🐱 🐈🐱 🐈🐱\n\n![](/img/giphy.gif)\n\n![](/img/giphy (1).gif)"
+}
