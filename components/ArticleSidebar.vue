@@ -1,9 +1,11 @@
 <template>
     <section>
+        <h1>Articles</h1>
         <article-preview
             v-for="post in blogPosts"
             :key="post.title"
             :name="post.title"
+            :slug="post.slug"
             :previewText="post.description"
             :imgSource="post.thumbnail"
         ></article-preview>
@@ -11,7 +13,7 @@
 </template>
 
 <script>
-import ArticlePreview from '@/components/ArticlePreview'
+import ArticlePreview from "@/components/ArticlePreview"
 
 export default {
     components: {
@@ -26,7 +28,14 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+    font-size: 2rem;
+    font-family: "EB Garamond", serif;
+}
 section {
-    width: 300px;
+    width: 350px;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
 }
 </style>

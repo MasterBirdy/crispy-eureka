@@ -7,7 +7,10 @@
             tag="section"
         >
             <img :src="post.thumbnail" />
-            <h2>{{ post.title }}</h2>
+
+            <h2>
+                {{ post.title }}
+            </h2>
             <p>{{ post.author }}</p>
         </nuxt-link>
     </div>
@@ -20,7 +23,7 @@ export default {
             script: [
                 {
                     src:
-                        'https://identity.netlify.com/v1/netlify-identity-widget.js'
+                        "https://identity.netlify.com/v1/netlify-identity-widget.js"
                 }
             ]
         }
@@ -38,6 +41,7 @@ export default {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
 }
 
 .grid section {
@@ -49,7 +53,7 @@ export default {
 }
 
 h2 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -57,7 +61,7 @@ h2 {
 
 p {
     color: rgb(56, 56, 56);
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 img {

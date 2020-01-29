@@ -1,9 +1,13 @@
 <template>
-    <div>
+    <nuxt-link :to="'/' + slug" class="main" tag="div">
+        <div
+            :style="{ backgroundImage: `url(${imgSource})` }"
+            class="background-picture"
+        ></div>
         <p>{{ name }}</p>
         <p>{{ previewText }}</p>
         <p>{{ imgSource }}</p>
-    </div>
+    </nuxt-link>
 </template>
 
 <script>
@@ -11,9 +15,20 @@ export default {
     props: {
         name: String,
         previewText: String,
-        imgSource: String
+        imgSource: String,
+        slug: String
     }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.background-picture {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.main {
+    cursor: pointer;
+}
+</style>

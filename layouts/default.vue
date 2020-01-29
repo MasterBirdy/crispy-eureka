@@ -2,14 +2,23 @@
     <div>
         <header class="container">
             <ul>
-                <li><nuxt-link to="/">HelpBlog</nuxt-link></li>
-                <li>About Us</li>
+                <li>
+                    <nuxt-link to="/">
+                        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                        HelpBlog
+                    </nuxt-link>
+                </li>
+                <li>
+                    About Us
+                </li>
                 <li>Blog</li>
                 <li>Contact</li>
             </ul>
         </header>
         <nav>
-            <div class="container">hello world</div>
+            <div class="container">
+                hello world
+            </div>
         </nav>
         <div class="container">
             <nuxt />
@@ -20,7 +29,7 @@
 <style>
 html,
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 *,
@@ -29,6 +38,10 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+i {
+    color: red;
 }
 
 .container {
@@ -56,7 +69,7 @@ ul li:first-child {
 header ul li {
     color: rgb(61, 61, 61);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-right: 0.5rem;
 }
 

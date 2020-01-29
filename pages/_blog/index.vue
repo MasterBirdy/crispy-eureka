@@ -1,19 +1,27 @@
 <template>
     <article>
-        <h1>{{ blogPost.title }}</h1>
-        <div class="flex">
-            <img :src="blogPost.profilepic" />
-            <div class="date-post">
-                <p>By {{ blogPost.author }}</p>
-                <p>{{ blogPost.date | date }}</p>
+        <div>
+            <h1>{{ blogPost.title }}</h1>
+            <div class="flex">
+                <img :src="blogPost.profilepic" />
+                <div class="date-post">
+                    <p>By {{ blogPost.author }}</p>
+                    <p>{{ blogPost.date | date }}</p>
+                </div>
             </div>
+            <div v-html="$md.render(blogPost.body)" class="markdown"></div>
         </div>
-        <div v-html="$md.render(blogPost.body)" class="markdown"></div>
+        <article-sidebar></article-sidebar>
     </article>
 </template>
 
 <script>
+import ArticleSidebar from "@/components/ArticleSidebar"
+
 export default {
+    components: {
+        ArticleSidebar
+    },
     async asyncData({ params, payload }) {
         if (payload) return { blogPost: payload }
         else
@@ -26,12 +34,20 @@ export default {
 
 <style scoped>
 article h1 {
-    font-size: 3rem;
-    margin-top: 1rem;
+    font-size: 3.5rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
     margin-bottom: 0.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #111;
+}
+
+article {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
 }
 
 .flex {
@@ -56,14 +72,50 @@ img {
     border-radius: 50%;
 }
 
+.markdown {
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+}
+
 .markdown >>> h1 {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
     margin: 0.67rem 0;
     color: #111;
 }
 
 .markdown >>> h2 {
-    font-size: 1.85rem;
+    font-size: 2rem;
+    font-family: "EB Garamond", serif;
+    margin: 0.67rem 0;
+    color: #111;
+}
+
+.markdown >>> h3 {
+    font-size: 1.75rem;
+    font-family: "EB Garamond", serif;
+    margin: 0.67rem 0;
+    color: #111;
+}
+
+.markdown >>> h4 {
+    font-size: 1.5rem;
+    font-family: "EB Garamond", serif;
+    margin: 0.67rem 0;
+    color: #111;
+}
+
+.markdown >>> h5 {
+    font-size: 1.3rem;
+    font-family: "EB Garamond", serif;
+    margin: 0.67rem 0;
+    color: #111;
+}
+
+.markdown >>> h6 {
+    font-size: 1.25rem;
+    font-family: "EB Garamond", serif;
     margin: 0.67rem 0;
     color: #111;
 }
