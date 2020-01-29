@@ -4,8 +4,8 @@
             <ul>
                 <li>
                     <nuxt-link to="/">
-                        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-                        HelpBlog
+                        <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+                        CatBlog
                     </nuxt-link>
                 </li>
                 <li>

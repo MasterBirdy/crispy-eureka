@@ -26,7 +26,7 @@ export default {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: "EB Garamond", serif;
     font-weight: 700;
     letter-spacing: 2px;
@@ -34,7 +34,9 @@ h1 {
     color: #111;
 }
 
-img {
-    max-width: 100%;
+@media screen and (max-width: 768px) {
+    .about-us h1 {
+        font-size: 2.3rem;
+    }
 }
 </style>

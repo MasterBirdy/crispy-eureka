@@ -89,6 +89,10 @@ export default {
         white-space: pre-line;
     }
 
+    .markdown >>> img {
+        max-width: 100%;
+    }
+
     .markdown >>> h1 {
         font-size: 2.1rem;
     }
