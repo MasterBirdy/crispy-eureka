@@ -35,7 +35,7 @@ h1 {
 }
 aside {
     width: 350px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(253, 253, 253);
     box-shadow: 2px 4px 8px 0px #ddd;
     border-radius: 5px;
     padding: 0.5rem 1rem;

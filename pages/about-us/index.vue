@@ -26,7 +26,7 @@ export default {
     padding: 0.5rem 2rem;
     border-radius: 5px;
     box-shadow: 2px 4px 8px 0px #ddd;
-    background-color: #fff;
+    background-color: rgb(253, 253, 253);
 }
 
 h1 {

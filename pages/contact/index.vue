@@ -15,7 +15,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 input,
 textarea {
     display: block;
@@ -27,5 +27,6 @@ section {
     padding: 1rem 2rem;
     border-radius: 5px;
     box-shadow: 2px 4px 8px 0px #ddd;
+    background-color: rgb(253, 253, 253);
 }
 </style>
