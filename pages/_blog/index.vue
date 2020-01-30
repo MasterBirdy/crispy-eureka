@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 section h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "EB Garamond", serif;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -47,7 +47,7 @@ section h1 {
 }
 
 section {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
@@ -56,6 +56,10 @@ section {
 .article-container {
     max-width: 800px;
     margin-right: 4rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 0px #ddd;
 }
 
 .flex {

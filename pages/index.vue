@@ -4,17 +4,18 @@
             v-for="post in blogPosts"
             :key="post.title"
             :to="'/' + post.slug"
-            tag="section"
+            tag="article"
         >
             <div
                 :style="{ backgroundImage: `url(${post.thumbnail})` }"
                 class="preview-image"
             ></div>
-
-            <h2>
-                {{ post.title }}
-            </h2>
-            <p>{{ post.author }}</p>
+            <div class="flex">
+                <h2>
+                    {{ post.title }}
+                </h2>
+                <p>{{ post.author }}</p>
+            </div>
         </nuxt-link>
     </div>
 </template>
@@ -48,12 +49,26 @@ export default {
     grid-row-gap: 1rem;
 }
 
-.grid section {
+article {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 6px 0px #ccc;
+}
+
+.grid article {
     padding: 1rem;
     text-align: center;
-    background-color: rgb(226, 226, 226);
+    background-color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .preview-image {
