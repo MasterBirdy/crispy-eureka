@@ -12,7 +12,7 @@
                     <nuxt-link to="/about-us">About Us</nuxt-link>
                 </li>
                 <li><nuxt-link to="/" exact>Blog</nuxt-link></li>
-                <li>Contact</li>
+                <li><nuxt-link to="/contact">Contact</nuxt-link></li>
             </ul>
         </header>
         <nav></nav>
@@ -30,6 +30,7 @@ body {
 
 body {
     padding-bottom: 1rem;
+    min-height: 100vh;
     background-color: #ffffff;
     background-image: linear-gradient(
             135deg,

@@ -15,4 +15,17 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+input,
+textarea {
+    display: block;
+}
+
+section {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 0px #ddd;
+}
+</style>

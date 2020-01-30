@@ -15,6 +15,12 @@ collections:
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Intro, name: intro, widget: markdown }
+          - label: "Contact"
+            name: "contact"
+            file: "assets/content/contact.json"
+            fields:
+                - { label: Title, name: title, widget: string }
+                - { label: Intro, name: intro, widget: markdown }
     - name: "blog"
       label: "Blog"
       format: "json"
