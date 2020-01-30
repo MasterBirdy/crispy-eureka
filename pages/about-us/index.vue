@@ -1,8 +1,8 @@
 <template>
-    <div class="about-us">
+    <section class="about-us">
         <h1>{{ aboutUs.title }}</h1>
         <markdown-component :body="aboutUs.intro"></markdown-component>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -22,11 +22,15 @@ export default {
 
 <style scoped>
 .about-us {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 0px #ddd;
+    background-color: #fff;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "EB Garamond", serif;
     font-weight: 700;
     letter-spacing: 2px;

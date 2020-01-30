@@ -69,7 +69,7 @@ export default {
 .markdown >>> ol,
 .markdown >>> ul {
     color: #444;
-    margin: 2rem 0 2rem 3rem;
+    margin: 1.5rem 0 1.5rem 3rem;
 }
 
 .markdown >>> li {
