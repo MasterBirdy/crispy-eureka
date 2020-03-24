@@ -1,22 +1,16 @@
-# lifestyle-blog
+# CatBlog
 
-> My dazzling Nuxt.js project
+A blog focusing on cat and pet owners in which posts can be uploaded by users authorized by Netlify CMS using the Nuxt.js Framework.
 
-## Build Setup
+Some of the technologies I used:
+* HTML
+* CSS
+* Javascript
+* Vue
+* Nuxt.js
 
-``` bash
-# install dependencies
-$ npm run install
+## Screenshots
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+![alt text](https://images-masterbirdy.s3-us-west-1.amazonaws.com/catblog-2-compressed.jpg "Home Page")
+![alt text](https://images-masterbirdy.s3-us-west-1.amazonaws.com/catblog-compressed.jpg "Blog Post 1")
+![alt text](https://images-masterbirdy.s3-us-west-1.amazonaws.com/catblog-3-comopressed.jpg "Blog Post 2")
